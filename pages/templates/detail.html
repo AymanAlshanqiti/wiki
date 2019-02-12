@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block header %}
+	Best Movie Ever
+{% endblock header %}
+
+
+{% block content %}
+	<ul>
+		<li>{{ page.title }}</li>
+		<li>{{ page.content }}</li>
+		<li>{{ page.last_update }}</li>
+	</ul>
+{% endblock content %}

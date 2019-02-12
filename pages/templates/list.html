@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block header %}
+	Best Shows Ever
+{% endblock header %}
+
+
+{% block content %}
+	{% for page in pages %}
+
+		<a href="{{ page.get_absolute_url }}">{{ page.title }}</a> <br>
+
+	{% endfor %}
+
+{% endblock content %}
